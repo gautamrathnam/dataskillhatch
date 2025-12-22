@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1f4fd8, #4f7cff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.logo {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f4fd8;
+}
+
+.section p {
+    text-align: center;
+}
+
+.highlight {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #f1f4ff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #1f4fd8;
+    margin-bottom: 10px;
+}
+
+/* LIST */
+.list {
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+}
+
+.list li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* DETAILS */
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+/* CONTACT */
+.contact p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cta {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #1f4fd8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
