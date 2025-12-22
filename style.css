@@ -147,3 +147,19 @@ footer {
         max-width: 100px;
     }
 }
+/* Mobile logo fix */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 90px;     /* smaller logo for mobile */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;   /* prevent text overflow */
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
