@@ -1,110 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data Skill Hatch | Data Analytics Training</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="icon" type="image/png" href="assets/images/logo1.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
+
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
   <div class="nav-container">
     <div class="logo">
-      <img src="assets/images/logo.png">
+      <img src="assets/logo.png" alt="Data Skill Hatch">
     </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="courses.html">Courses</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html#enroll" class="nav-btn">Enroll Now</a>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-btn">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="hero fade-in">
-  <h1>Industry-Focused Data Analytics Training for Career Growth</h1>
-  <p>Power BI • SQL • Python with Real-World Projects & Certification</p>
-  <div class="hero-buttons">
-    <a href="contact.html#enroll" class="btn-primary">Enroll for Upcoming Batch</a>
-    <a href="https://wa.me/919698825069" class="btn-secondary">Speak to an Advisor</a>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content fade-in">
+    <h1>Become a Job-Ready Data Analyst</h1>
+    <p>Power BI • SQL • Python • Real-Time Industry Projects</p>
+    <div class="hero-buttons">
+      <a href="#enroll" class="btn-primary">Enroll Now</a>
+      <a href="#courses" class="btn-secondary">View Curriculum</a>
+    </div>
   </div>
 </section>
 
-<section class="section fade-in">
-  <h2>Why Data Skill Hatch</h2>
-  <div class="cards">
-    <div class="card fade-in">Real-Time Industry Projects</div>
-    <div class="card fade-in">Career-Focused Curriculum</div>
-    <div class="card fade-in">Certification on Completion</div>
-    <div class="card fade-in">Expert Mentorship</div>
-  </div>
-</section>
-<section class="counter-section fade-in">
+<!-- ================= COUNTERS ================= -->
+<section class="counter-section">
   <div class="counter-container">
-
     <div class="counter-box">
-      <div class="counter-number" data-target="500">0</div>
+      <div class="counter-number" data-count="500">0</div>
       <div class="counter-text">Students Trained</div>
     </div>
-
     <div class="counter-box">
-      <div class="counter-number" data-target="50">0</div>
-      <div class="counter-text">Real-Time Projects</div>
+      <div class="counter-number" data-count="50">0</div>
+      <div class="counter-text">Live Projects</div>
     </div>
-
     <div class="counter-box">
-      <div class="counter-number" data-target="10">0</div>
-      <div class="counter-text">Years of Experience</div>
+      <div class="counter-number" data-count="8">0</div>
+      <div class="counter-text">Weeks Program</div>
     </div>
-
-    <div class="counter-box">
-      <div class="counter-number" data-target="100">0</div>
-      <div class="counter-text">Career Success Stories</div>
-    </div>
-
   </div>
 </section>
-<section class="section fade-in">
-  <h2>What Our Learners Say</h2>
 
+<!-- ================= WHY US ================= -->
+<section class="section" id="about">
+  <h2>Why Choose Data Skill Hatch?</h2>
+  <div class="cards">
+    <div class="card fade-in">
+      <h3>👨‍🏫 Trainer-Led Sessions</h3>
+      <p>Live sessions with industry-focused teaching.</p>
+    </div>
+    <div class="card fade-in">
+      <h3>📊 Real-Time Projects</h3>
+      <p>Hands-on projects based on real business use-cases.</p>
+    </div>
+    <div class="card fade-in">
+      <h3>🎓 Certification</h3>
+      <p>Industry-recognized certificate after completion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COURSES ================= -->
+<section class="section alt-bg" id="courses">
+  <h2>What You Will Learn</h2>
+  <div class="cards">
+    <div class="card fade-in">
+      <h3>Power BI</h3>
+      <p>Dashboards, DAX, data modeling, real reports.</p>
+    </div>
+    <div class="card fade-in">
+      <h3>SQL</h3>
+      <p>Queries, joins, analytics functions & case studies.</p>
+    </div>
+    <div class="card fade-in">
+      <h3>Python</h3>
+      <p>Pandas, NumPy, visualization & analysis projects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section">
+  <h2>What Our Students Say</h2>
   <div class="testimonial-container">
     <div class="testimonial active">
-      <p>
-        “The training was very practical and industry-focused.  
-        Real-time projects helped me gain confidence.”
-      </p>
-      <h4>— Arjun K, Data Analyst</h4>
+      <p>“Very practical training. I cracked interviews confidently.”</p>
+      <h4>— Arun, Data Analyst</h4>
     </div>
-
     <div class="testimonial">
-      <p>
-        “Power BI and SQL sessions were well structured.  
-        Highly recommended for career switchers.”
-      </p>
-      <h4>— Priya S</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>
-        “Clear explanations, hands-on practice, and good mentoring.  
-        Worth the investment.”
-      </p>
-      <h4>— Naveen R</h4>
+      <p>“Power BI concepts are crystal clear with projects.”</p>
+      <h4>— Priya</h4>
     </div>
   </div>
 </section>
 
+<!-- ================= ENROLL ================= -->
+<section class="section enroll" id="enroll">
+  <h2>Enroll Now</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPPoCzwN62U8EI_fyNpUnCUXG7xd3Gkr-LkGNRGla0H2KK-w/viewform?usp=sharing"></iframe>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: gowtham.rathinam@dataskillhatch.com</p>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  <p>© 2025 Data Skill Hatch. All Rights Reserved.</p>
+  © 2025 Data Skill Hatch. All rights reserved.
 </footer>
-<a href="https://wa.me/919698825069" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <span>💬</span>
+
+<!-- ================= WHATSAPP ================= -->
+<a class="whatsapp-float" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+  <i class="fab fa-whatsapp"></i>
 </a>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+/* Fade-in on scroll */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
+  });
+});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+/* Counter animation */
+const counters = document.querySelectorAll('.counter-number');
+counters.forEach(counter => {
+  let start = 0;
+  const end = +counter.getAttribute('data-count');
+  const speed = 40;
+  const update = () => {
+    start += Math.ceil(end / speed);
+    if (start < end) {
+      counter.innerText = start;
+      setTimeout(update, 30);
+    } else {
+      counter.innerText = end;
+    }
+  };
+  update();
+});
+</script>
+
+<!-- ============ JS ============ -->
 <script src="assets/js/main.js" defer></script>
 
 </body>
