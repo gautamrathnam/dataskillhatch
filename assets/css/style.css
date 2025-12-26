@@ -411,9 +411,10 @@ footer {
   box-shadow: 0 20px 45px rgba(37, 99, 235, 0.22);
   background: #eef2ff;
 }
-/* ================= FORCE VERTICAL PROGRAM LAYOUT ================= */
+/* ================= FORCE VERTICAL PROGRAM LAYOUT ================= 
 .cards.vertical-programs {
   display: flex !important;
   flex-direction: column !important;
   gap: 28px;
 }
+*/
