@@ -91,24 +91,92 @@
   </div>
 </section>
 
+
 <!-- ================= COURSES ================= -->
 <section class="section alt-bg" id="courses">
-  <h2>What You Will Learn</h2>
-  <div class="cards">
-    <div class="card fade-in">
-      <h3>Power BI</h3>
-      <p>Dashboards, DAX, data modeling, real reports.</p>
+  <h2>Our Programs</h2>
+
+  <div class="cards accordion">
+
+    <!-- Power BI -->
+    <div class="card fade-in course-card">
+      <div class="course-header" onclick="toggleCourse('powerbi')">
+        <h3>📊 Power BI</h3>
+        <span class="toggle-text" id="powerbi-btn">View more</span>
+      </div>
+
+      <div class="course-content" id="powerbi">
+        <p>
+          Learn to design professional dashboards and reports using
+          real business datasets.
+        </p>
+        <ul>
+          <li>✔ Data Modeling & DAX</li>
+          <li>✔ Interactive Dashboards</li>
+          <li>✔ Business KPIs & Reports</li>
+          <li>✔ Real-time Project</li>
+        </ul>
+      </div>
     </div>
-    <div class="card fade-in">
-      <h3>SQL</h3>
-      <p>Queries, joins, analytics functions & case studies.</p>
+
+    <!-- SQL -->
+    <div class="card fade-in course-card">
+      <div class="course-header" onclick="toggleCourse('sql')">
+        <h3>🗄️ SQL</h3>
+        <span class="toggle-text" id="sql-btn">View more</span>
+      </div>
+
+      <div class="course-content" id="sql">
+        <p>
+          Master SQL queries used by analysts in real organizations.
+        </p>
+        <ul>
+          <li>✔ Select, Joins & Subqueries</li>
+          <li>✔ Window Functions</li>
+          <li>✔ Case Studies</li>
+          <li>✔ Interview-oriented practice</li>
+        </ul>
+      </div>
     </div>
-    <div class="card fade-in">
-      <h3>Python</h3>
-      <p>Pandas, NumPy, visualization & analysis projects.</p>
+
+    <!-- Python -->
+    <div class="card fade-in course-card">
+      <div class="course-header" onclick="toggleCourse('python')">
+        <h3>🐍 Python</h3>
+        <span class="toggle-text" id="python-btn">View more</span>
+      </div>
+
+      <div class="course-content" id="python">
+        <p>
+          Analyze, clean and visualize data using Python libraries.
+        </p>
+        <ul>
+          <li>✔ Pandas & NumPy</li>
+          <li>✔ Data Cleaning Techniques</li>
+          <li>✔ Matplotlib & Seaborn</li>
+          <li>✔ Analytics Project</li>
+        </ul>
+      </div>
+    </div>
+  <!-- 🚀 FULL DATA ANALYTICS PROGRAM (NO ACCORDION) -->
+    <div class="card fade-in full-program">
+      <h3>🚀 Full Data Analytics Program</h3>
+      <p>
+        Complete end-to-end analytics training designed for career growth.
+      </p>
+      <ul style="text-align:left; margin-top:12px;">
+        <li>✔ Power BI + SQL + Python</li>
+        <li>✔ Capstone Project</li>
+        <li>✔ Resume & Interview Guidance</li>
+        <li>✔ Certification</li>
+      </ul>
+      <a href="enroll.html" class="btn-primary" style="margin-top:20px; display:inline-block;">
+        Enroll Now
+      </a>
     </div>
   </div>
 </section>
+
 
 <!-- ================= TESTIMONIALS ================= -->
 <section class="section">
@@ -176,6 +244,65 @@ counters.forEach(counter => {
 });
 </script>
 
+<script>
+function togglePowerBI() {
+  const shortView = document.getElementById("powerbi-short");
+  const fullView = document.getElementById("powerbi-full");
+
+  if (shortView.style.display === "none") {
+    shortView.style.display = "block";
+    fullView.style.display = "none";
+  } else {
+    shortView.style.display = "none";
+    fullView.style.display = "block";
+  }
+}
+function toggleSQL() {
+  const shortView = document.getElementById("sql-short");
+  const fullView = document.getElementById("sql-full");
+
+  if (shortView.style.display === "none") {
+    shortView.style.display = "block";
+    fullView.style.display = "none";
+  } else {
+    shortView.style.display = "none";
+    fullView.style.display = "block";
+  }
+}
+
+function togglePython() {
+  const shortView = document.getElementById("python-short");
+  const fullView = document.getElementById("python-full");
+
+  if (shortView.style.display === "none") {
+    shortView.style.display = "block";
+    fullView.style.display = "none";
+  } else {
+    shortView.style.display = "none";
+    fullView.style.display = "block";
+  }
+}
+</script>
+<script>
+function toggleCourse(id) {
+  const contents = document.querySelectorAll(".course-content");
+  const buttons = document.querySelectorAll(".toggle-text");
+
+  contents.forEach(content => {
+    if (content.id === id) {
+      const isActive = content.classList.contains("active");
+
+      contents.forEach(c => c.classList.remove("active"));
+      buttons.forEach(b => b.innerText = "View more");
+
+      if (!isActive) {
+        content.classList.add("active");
+        document.getElementById(id + "-btn").innerText = "View less";
+      }
+    }
+  });
+}
+</script>
 
 </body>
 </html>
