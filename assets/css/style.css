@@ -419,3 +419,101 @@ footer {
 .full-program {
   animation: glowPulse 3.5s ease-in-out infinite;
 }
+/* ================= PROGRAM CARDS ================= */
+
+.program-card {
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+/* Hover animation */
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.25);
+}
+
+/* Highlight full program slightly more */
+.full-program {
+  border: 2px solid #2563eb;
+  background: #eef2ff;
+}
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 0 rgba(37, 99, 235, 0); }
+  50% { box-shadow: 0 0 35px rgba(37, 99, 235, 0.3); }
+  100% { box-shadow: 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+.program-card {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.program-card:hover {
+  animation-play-state: paused;
+}
+/* ================= MOBILE TIGHT LAYOUT ================= */
+@media (max-width: 768px) {
+
+  /* Section padding tighter */
+  .section {
+    padding: 50px 14px;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  /* Cards grid tighter */
+  .cards {
+    gap: 18px;
+  }
+
+  /* Program cards tighter */
+  .program-card {
+    padding: 22px;
+  }
+
+  .program-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .program-card p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  .program-card ul {
+    font-size: 0.9rem;
+  }
+
+  .program-card ul li {
+    margin-bottom: 6px;
+  }
+
+  /* Button size optimized */
+  .btn-primary {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+
+  .program-card {
+    padding: 18px;
+  }
+
+  .program-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .program-card p {
+    font-size: 0.9rem;
+  }
+
+  .program-card ul {
+    font-size: 0.85rem;
+  }
+}
