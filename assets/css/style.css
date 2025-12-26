@@ -22,7 +22,7 @@ body {
   display: flex;
   align-items: center;              /* vertical centering */
   justify-content: space-between;   /* logo left, menu right */
-  padding: 12px 40px;               /* controls height */
+  padding: 10px 40px;               /* controls height */
   background: #ffffff;
 }
 
