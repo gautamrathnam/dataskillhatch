@@ -95,10 +95,7 @@
 <!-- ================= COURSES ================= -->
 <section class="section alt-bg" id="courses">
   <h2>Our Programs</h2>
-
   <div class="cards vertical-programs">
-
-
     <!-- Power BI -->
     <div class="card fade-in program-card">
       <h3>📊 Power BI for Data Analytics</h3>
@@ -153,10 +150,8 @@
         <li>✔ Capstone Project</li>
         <li>✔ Resume & Interview Guidance</li>
         <li>✔ Certification</li>
-      </ul>
-    
+      </ul> 
     </div>
-
   </div>
 </section>
 
@@ -227,66 +222,5 @@ counters.forEach(counter => {
   update();
 });
 </script>
-
-<script>
-function togglePowerBI() {
-  const shortView = document.getElementById("powerbi-short");
-  const fullView = document.getElementById("powerbi-full");
-
-  if (shortView.style.display === "none") {
-    shortView.style.display = "block";
-    fullView.style.display = "none";
-  } else {
-    shortView.style.display = "none";
-    fullView.style.display = "block";
-  }
-}
-function toggleSQL() {
-  const shortView = document.getElementById("sql-short");
-  const fullView = document.getElementById("sql-full");
-
-  if (shortView.style.display === "none") {
-    shortView.style.display = "block";
-    fullView.style.display = "none";
-  } else {
-    shortView.style.display = "none";
-    fullView.style.display = "block";
-  }
-}
-
-function togglePython() {
-  const shortView = document.getElementById("python-short");
-  const fullView = document.getElementById("python-full");
-
-  if (shortView.style.display === "none") {
-    shortView.style.display = "block";
-    fullView.style.display = "none";
-  } else {
-    shortView.style.display = "none";
-    fullView.style.display = "block";
-  }
-}
-</script>
-<script>
-function toggleCourse(id) {
-  const contents = document.querySelectorAll(".course-content");
-  const buttons = document.querySelectorAll(".toggle-text");
-
-  contents.forEach(content => {
-    if (content.id === id) {
-      const isActive = content.classList.contains("active");
-
-      contents.forEach(c => c.classList.remove("active"));
-      buttons.forEach(b => b.innerText = "View more");
-
-      if (!isActive) {
-        content.classList.add("active");
-        document.getElementById(id + "-btn").innerText = "View less";
-      }
-    }
-  });
-}
-</script>
-
 </body>
 </html>
