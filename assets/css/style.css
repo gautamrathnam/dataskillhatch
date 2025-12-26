@@ -61,7 +61,7 @@ nav a:hover {
 .hero {
   position: relative;
   height: 90vh;
-  background: url("assets/images/data-bg.jpg") center/cover no-repeat;
+  background: url("../images/data-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -323,5 +323,5 @@ footer {
   );
 }
 .hero {
-  background: url("data-bg.jpg") center/cover no-repeat;
+  background: url("../images/data-bg.jpg") center/cover no-repeat;
 }
