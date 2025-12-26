@@ -34,7 +34,7 @@ body {
 }
 
 .logo img {
-  height: 120px;   /* increase/decrease logo size here */
+  height: 60px;   /* increase/decrease logo size here */
   width: auto;
 }
 
@@ -424,7 +424,7 @@ footer {
 */
 @media (max-width: 768px) {
   .navbar {
-    padding: 6px 20px;
+    padding: 4px 40px;
   }
 
   .logo img {
