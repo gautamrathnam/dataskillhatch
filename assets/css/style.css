@@ -322,6 +322,100 @@ footer {
     rgba(37,99,235,0.92)
   );
 }
-.hero {
-  background: url("../images/data-bg.jpg") center/cover no-repeat;
+.course-card {
+  cursor: pointer;
+}
+/* ================= ACCORDION COURSES ================= */
+
+.course-card {
+  cursor: pointer;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-text {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Accordion content */
+.course-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+  opacity: 0;
+  margin-top: 0;
+}
+
+.course-content ul {
+  text-align: left;
+  margin-top: 12px;
+}
+
+/* Active accordion */
+.course-content.active {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+/* Mobile accordion optimization */
+@media (max-width: 768px) {
+  .course-header h3 {
+    font-size: 1.1rem;
+  }
+}
+.full-program {
+  border: 2px solid #2563eb;
+  background: #eef2ff;
+}
+/* ================= FULL PROGRAM HOVER ANIMATION ================= */
+
+.full-program {
+  position: relative;
+  border: 2px solid #2563eb;
+  background: #eef2ff;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+/* Hover effect */
+.full-program:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.25);
+  background: #e0e7ff;
+}
+
+/* Animate button inside */
+.full-program .btn-primary {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.full-program:hover .btn-primary {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+/* ================= GLOW PULSE ANIMATION ================= */
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 0 rgba(37, 99, 235, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(37, 99, 235, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(37, 99, 235, 0.0);
+  }
+}
+
+.full-program {
+  animation: glowPulse 3.5s ease-in-out infinite;
 }
