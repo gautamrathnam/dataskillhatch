@@ -19,7 +19,7 @@ body {
 /* ================= NAVBAR ================= */
 .navbar {
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
   padding: 12px 40px;   /* controls navbar height */
   background: #ffffff;
@@ -30,7 +30,7 @@ body {
 }
 
 .logo img {
-  height: 70px;
+  height: 100px;
   width: auto;
   display: flex;
   align-items: left;
