@@ -22,8 +22,9 @@ body {
   display: flex;
   align-items: center;              /* vertical centering */
   justify-content: space-between;   /* logo left, menu right */
-  padding: 10px 40px;               /* controls height */
+  padding: 6px 40px;               /* controls height */
   background: #ffffff;
+  margin-bottom: 0;
 }
 
 /* Logo */
@@ -67,6 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 60px;
 }
 
 .hero-overlay {
@@ -422,7 +424,7 @@ footer {
 */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 20px;
+    padding: 6px 20px;
   }
 
   .logo img {
