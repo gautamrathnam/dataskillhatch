@@ -61,7 +61,7 @@ nav a:hover {
 .hero {
   position: relative;
   height: 90vh;
-  background: url("assets/data-bg.jpg") center/cover no-repeat;
+  background: url("assets/images/data-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,4 +314,14 @@ footer {
 .card-logo {
   width: 30px;
   height: auto;
+}
+.hero-overlay {
+  background: linear-gradient(
+    120deg,
+    rgba(15,23,42,0.95),
+    rgba(37,99,235,0.92)
+  );
+}
+.hero {
+  background: url("data-bg.jpg") center/cover no-repeat;
 }
