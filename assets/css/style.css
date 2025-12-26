@@ -16,44 +16,48 @@ body {
   line-height: 1.6;
 }
 
-/* ================= NAVBAR ================= */
+/* ================= NAVBAR (AUTO HEIGHT) ================= */
+
 .navbar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 40px;   /* controls navbar height */
+  align-items: center;              /* vertical centering */
+  justify-content: space-between;   /* logo left, menu right */
+  padding: 12px 40px;               /* controls height */
   background: #ffffff;
 }
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 140px;
+  height: 120px;   /* increase/decrease logo size here */
   width: auto;
+}
+
+/* Navigation */
+.nav-links {
   display: flex;
   align-items: center;
+  gap: 28px;
 }
 
-nav a {
-  margin-left: 24px;
+.nav-links a {
   text-decoration: none;
+  font-weight: 500;
   color: #2563eb;
-  font-weight: 600;
-  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #1e40af;
-}
-
-.nav-btn {
-  padding: 8px 18px;
-  border-radius: 30px;
+/* Contact button */
+.btn-contact {
   background: #2563eb;
-  color: #fff !important;
+  color: #ffffff !important;
+  padding: 8px 18px;
+  border-radius: 999px;
 }
+
 
 /* ================= HERO ================= */
 .hero {
@@ -417,16 +421,15 @@ footer {
 }
 */
 @media (max-width: 768px) {
-  .logo img {
-    height: 40px;
-  }
-}
-@media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
   }
 
   .logo img {
-    height: 42px;
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 18px;
   }
 }
