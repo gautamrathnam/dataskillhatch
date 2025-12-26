@@ -517,3 +517,29 @@ footer {
     font-size: 0.85rem;
   }
 }
+/* ================= HOVER EFFECT FOR ALL PROGRAM CARDS ================= */
+
+.program-card {
+  position: relative;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+/* Hover animation */
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.25);
+  background: #eef2ff;
+}
+
+/* Cursor feedback */
+.program-card {
+  cursor: pointer;
+}
+.full-program {
+  border: 2px solid #2563eb;
+  background: #e0e7ff;
+}
+
