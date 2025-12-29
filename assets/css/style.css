@@ -435,3 +435,58 @@ footer {
     gap: 18px;
   }
 }
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-section h2 {
+  color: #2563eb;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contact-card {
+  display: inline-block;
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.contact-card a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* ================= WHO CAN JOIN ================= */
+
+.bullet-points {
+  max-width: 800px;
+  margin: 30px auto 0;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.bullet-points li {
+  margin-bottom: 15px;
+}
+
+.bullet-points strong {
+  color: #2563eb;
+}
