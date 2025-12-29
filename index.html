@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Data skill hatch",
+  "url": "https://dataskillhatch.com",
+  "logo": "https://dataskillhatch.com/favicon.png"
+}
+</script>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dataskillhatch | Data Analytics Training</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+  <title>Data Skill Hatch | Data Analytics Training</title>
+<!-- FAVICON -->
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/logo1.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png">
 </head>
 
 <body>
@@ -23,17 +50,19 @@
   </nav>
 </header>
 
+
 <!-- ================= HERO ================= -->
 <section class="hero" id="home">
   <div class="hero-overlay"></div>
-
   <div class="hero-content fade-in">
     <h1>Become a Job-Ready Data Analyst</h1>
-    <p>Power BI • SQL • Python • Real-World Projects</p>
-
+    <p>Master Power BI, SQL & Python with industry-focused training.</p>
+	<p>Beginner to Advanced</p>
+	<p>Hands-on Projects</p>
+	<p>Career & Interview Support</p>
     <div class="hero-buttons">
-      <a href="#contact" class="btn-primary">Enroll Now</a>
-      <a href="#courses" class="btn-secondary">View Programs</a>
+      <a href="enroll.html" class="btn-primary">Enroll Now</a>
+      <a href="#courses" class="btn-secondary">View Curriculum</a>
     </div>
   </div>
 </section>
@@ -41,108 +70,206 @@
 <!-- ================= COUNTERS ================= -->
 <section class="counter-section">
   <div class="counter-container">
-    <div class="counter-box fade-in">
+    <div class="counter-box">
       <div class="counter-number" data-count="300">0</div>
       <div class="counter-text">Students Trained</div>
     </div>
-    <div class="counter-box fade-in">
+    <div class="counter-box">
       <div class="counter-number" data-count="20">0</div>
       <div class="counter-text">Live Projects</div>
     </div>
-    <div class="counter-box fade-in">
-      <div class="counter-number" data-count="8">0</div>
+    <div class="counter-box">
+      <div class="counter-number" data-count="8-12">0</div>
       <div class="counter-text">Weeks Program</div>
     </div>
   </div>
 </section>
 
-<!-- ================= WHO CAN JOIN ================= -->
-<section class="section">
-  <h2>Who Can Join?</h2>
+<!-- ================= WHY US ================= -->
+<section class="section" id="about">
+  <h2>Why Choose Data Skill Hatch?</h2>
+  <div class="cards">
+    <div class="card fade-in">
+      <h3>Industry-Focused Training</h3>
+      <p>Our curriculum is designed based on real industry requirements, not just theory. You’ll work with real datasets, business problems, and dashboards used by data professionals.</p>
+    </div>
+    <div class="card fade-in">
+      <h3>Job-Ready Curriculum</h3>
+      <p>Our training is focused on making you interview-ready and job-ready, not just certified.</p>
+    </div>
+    <div class="card fade-in">
+      <h3>Mentor-Led Learning</h3>
+      <p>Learn from experienced industry mentors who guide you step-by-step, clear your doubts, and share real-world insights from their professional experience.</p>
+    </div>
+  </div>
+</section>
 
-  <ul class="bullet-points fade-in">
-    <li>Students & fresh graduates starting their analytics career</li>
-    <li>Working professionals switching to data roles</li>
-    <li>IT professionals upskilling in analytics</li>
-    <li>Business professionals learning data-driven skills</li>
-    <li>Anyone passionate about data & problem solving</li>
+
+<!-- ================= WHAT WE PROVIDE ================= -->
+<section class="section" id="about">
+  <h2>What we provide?</h2>
+  <div class="cards">
+	<div class="card fade-in">
+      <h3>Certification That Matters</h3>
+      <p>Receive a Data Skill Hatch Certification that validates your practical skills and projects, helping you stand out in interviews.</p>
+    </div>
+	
+	<div class="card fade-in">
+      <h3>Career & Interview Support</h3>
+      <p>Resume building guidance, Mock interviews and Career roadmap planning</p>
+    </div>
+	
+	<div class="card fade-in">
+      <h3>Flexible Learning Options</h3>
+      <p>Weekend & weekday batches and Recorded sessions for revision</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= WHO CAN JOIN? ================= -->
+<section class="section" id="about">
+  <h2>Who can join?</h2>
+
+  <ul class="bullet-points">
+    <li>
+      Students & Freshers
+    </li>
+
+    <li>
+      Professionals looking to switch careers
+    </li>
+
+    <li>
+      Anyone wanting to build a strong analytics foundation
+    </li>
+
+    <li>
+      Anyone interested in data-driven decision making
+    </li>
+	
+	<li>
+      <strong>No prior coding experience required.</strong>
+    </li>
   </ul>
 </section>
 
-<!-- ================= PROGRAMS ================= -->
+
+<!-- ================= COURSES ================= -->
 <section class="section alt-bg" id="courses">
   <h2>Our Programs</h2>
-
   <div class="cards">
-    <div class="card program-card fade-in">
-      <h3>📊 Power BI for Data Analytics</h3>
-      <p>Build professional dashboards using real business data.</p>
-      <ul>
-        <li>Data Modeling & DAX</li>
-        <li>Interactive Dashboards</li>
-        <li>Business KPIs</li>
+    <!-- Power BI -->
+    <div class="card fade-in program-card">
+      <h3>Power BI Data Analyst Mastery Program</h3>
+      <p>
+        Learn to design professional dashboards and reports using
+        real business datasets.
+      </p>
+      <ul style="text-align:left; margin-top:12px;">
+        <li>Data Cleaning & Transformation</li>
+		<li>Data Modeling & DAX Fundamentals</li>
+        <li>Designing Dashboards</li>
+        <li>Publishing & Power BI Service</li>
       </ul>
     </div>
 
-    <div class="card program-card fade-in">
-      <h3>🗄️ SQL for Data Analysis</h3>
-      <p>Master SQL queries used by real analysts.</p>
-      <ul>
+    <!-- SQL -->
+    <div class="card fade-in program-card">
+      <h3>SQL Data Analyst Mastery Program</h3>
+      <p>
+        Master SQL queries used by analysts in real organizations.
+      </p>
+      <ul style="text-align:left; margin-top:12px;">
+        <li>SQL Fundamentals</li>
         <li>Joins & Subqueries</li>
-        <li>Window Functions</li>
-        <li>Case Studies</li>
+        <li>CTE & Window functions</li>
+        <li>Real-time data querying scenarios</li>
       </ul>
     </div>
 
-    <div class="card program-card fade-in">
-      <h3>🐍 Python for Data Analysis</h3>
-      <p>Clean, analyze & visualize data using Python.</p>
-      <ul>
-        <li>Pandas & NumPy</li>
-        <li>Data Cleaning</li>
-        <li>Analytics Project</li>
+    <!-- Python -->
+    <div class="card fade-in program-card">
+      <h3>Python Data Analyst Mastery Program</h3>
+      <p>
+        Analyze, clean and visualize data using Python libraries.
+      </p>
+      <ul style="text-align:left; margin-top:12px;">
+        <li>Python basics for analytics</li>
+        <li>Dataframes with Pandas</li>
+        <li>Cleaning & transforming datasets</li>
+        <li>Data Visualisation</li>
       </ul>
+    </div>
+
+    <!-- Full Program -->
+    <div class="card fade-in program-card">
+      <h3>Data Analytics Mastery Program (Power BI, SQL & Python)</h3>
+      <p>
+        Complete end-to-end analytics training designed for career growth.
+      </p>
+      <ul style="text-align:left; margin-top:12px;">
+        <li>Power BI + SQL + Python</li>
+        <li>End-to-end Analysis</li>
+        <li>Dashboard & Presentation</li>
+        <li>Resume-ready Project</li>
+      </ul> 
     </div>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="contact-section" id="contact">
-  <h2>Get in Touch</h2>
+<section class="contact-section">
+  <h2>Contact Us</h2>
 
-  <div class="contact-card fade-in">
-    <p>📧 <a href="mailto:dataskillhatch@gmail.com">dataskillhatch@gmail.com</a></p>
-    <p>📞 +91-XXXXXXXXXX</p>
+  <div class="contact-card">
+    <p>
+      <span class="icon">📧</span>
+      <a href="mailto:gowtham.rathinam@dataskillhatch.com">
+        gowtham.rathinam@dataskillhatch.com
+      </a>
+    </p>
   </div>
 </section>
 
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  © 2025 Dataskillhatch. All rights reserved.
+  © 2025 Data Skill Hatch. All rights reserved.
 </footer>
 
-<!-- ================= JS ================= -->
+<!-- ================= WHATSAPP ================= -->
+<a class="whatsapp-float" href="https://wa.me/919698825069" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ================= SCRIPTS ================= -->
 <script>
-/* Fade-in animation */
+/* Fade-in on scroll */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add("show");
+    if (entry.isIntersecting) entry.target.classList.add('show');
   });
 });
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 /* Counter animation */
-document.querySelectorAll(".counter-number").forEach(counter => {
+const counters = document.querySelectorAll('.counter-number');
+counters.forEach(counter => {
   let start = 0;
-  const end = +counter.dataset.count;
-  const step = Math.ceil(end / 40);
+  const end = +counter.getAttribute('data-count');
+  const speed = 40;
   const update = () => {
-    start += step;
-    counter.innerText = start < end ? start : end;
-    if (start < end) setTimeout(update, 30);
+    start += Math.ceil(end / speed);
+    if (start < end) {
+      counter.innerText = start;
+      setTimeout(update, 30);
+    } else {
+      counter.innerText = end;
+    }
   };
   update();
 });
 </script>
-
 </body>
 </html>
