@@ -1,0 +1,592 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR (AUTO HEIGHT) ================= */
+
+.navbar {
+  display: flex;
+  align-items: center;              /* vertical centering */
+  justify-content: space-between;   /* logo left, menu right */
+  padding: 6px 40px;               /* controls height */
+  background: #ffffff;
+  margin-bottom: 0;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;   /* increase/decrease logo size here */
+  width: auto;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+/* Contact button */
+.btn-contact {
+  background: #2563eb;
+  color: #ffffff !important;
+  padding: 8px 18px;
+  border-radius: 999px;
+}
+
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("../images/data-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(30,64,175,0.92),
+    rgba(37,99,235,0.9)
+  );
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: #2563eb;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.25);
+}
+
+.btn-secondary {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: #ffffff;
+  color: #2563eb;
+}
+
+/* ================= COUNTERS ================= */
+.counter-section {
+  background: #f1f5f9;
+  padding: 60px 20px;
+}
+
+.counter-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.counter-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.counter-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.counter-text {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  color: #2563eb;
+  margin-bottom: 40px;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #f8fafc;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #1e40af;
+}
+
+/* ================= ALT BACKGROUND ================= */
+.alt-bg {
+  background: #f1f5f9;
+}
+
+/* ================= TESTIMONIAL ================= */
+.testimonial-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.testimonial {
+  background: #f8fafc;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  color: #2563eb;
+}
+
+/* ================= ENROLL ================= */
+.enroll iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+  border-radius: 16px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #2563eb;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ================= ANIMATIONS ================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+
+
+/* =========================
+   LOGO BASED HEADERS
+   ========================= */
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card-logo {
+  width: 30px;
+  height: auto;
+}
+.hero-overlay {
+  background: linear-gradient(
+    120deg,
+    rgba(15,23,42,0.95),
+    rgba(37,99,235,0.92)
+  );
+}
+
+/* ================= GLOW PULSE ANIMATION ================= */
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 0 rgba(37, 99, 235, 0); }
+  50% { box-shadow: 0 0 35px rgba(37, 99, 235, 0.3); }
+  100% { box-shadow: 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+/* ================= MOBILE TIGHT LAYOUT ================= */
+@media (max-width: 768px) {
+
+  /* Section padding tighter */
+  .section {
+    padding: 50px 14px;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  /* Cards grid tighter */
+  .cards {
+    gap: 18px;
+  }
+
+  /* Program cards tighter */
+  .program-card {
+    padding: 22px;
+  }
+
+  .program-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .program-card p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  .program-card ul {
+    font-size: 0.9rem;
+  }
+
+  .program-card ul li {
+    margin-bottom: 6px;
+  }
+
+  /* Button size optimized */
+  .btn-primary {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+
+  .program-card {
+    padding: 18px;
+  }
+
+  .program-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .program-card p {
+    font-size: 0.9rem;
+  }
+
+  .program-card ul {
+    font-size: 0.85rem;
+  }
+}
+/* ================= HOVER EFFECT FOR ALL PROGRAM CARDS ================= */
+.program-card {
+  position: relative;
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.22);
+  background: #eef2ff;
+}
+/* ================= FORCE VERTICAL PROGRAM LAYOUT ================= 
+.cards.vertical-programs {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 28px;
+}
+*/
+@media (max-width: 768px) {
+  .navbar {
+    padding: 4px 40px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-section h2 {
+  color: #2563eb;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contact-card {
+  display: inline-block;
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.contact-card a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* ================= WHO CAN JOIN ================= */
+
+.bullet-points {
+  max-width: 800px;
+  margin: 30px auto 0;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.bullet-points li {
+  margin-bottom: 15px;
+}
+
+.bullet-points strong {
+  color: #2563eb;
+}
+
+.who-section {
+  padding: 80px 20px;
+  background: #f5f9ff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.who-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.who-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.who-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.who-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.who-card p {
+  font-size: 15px;
+  color: #666;
+}
+
+.highlight {
+  border: 2px solid #2563eb;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .who-section {
+    padding: 50px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .who-grid {
+    grid-template-columns: 1fr;   /* Single column */
+    gap: 20px;
+  }
+
+  .who-card {
+    padding: 20px;
+  }
+
+  .who-card h3 {
+    font-size: 18px;
+  }
+
+  .who-card p {
+    font-size: 14px;
+  }
+
+  .who-card .icon {
+    font-size: 32px;
+  }
+
+}
