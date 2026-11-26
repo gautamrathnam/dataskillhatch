@@ -1,281 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Data skill hatch",
-  "url": "https://dataskillhatch.com",
-  "logo": "https://dataskillhatch.com/favicon.png"
-}
-</script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-
-  <title>Data Skill Hatch | Data Analytics Training</title>
-<!-- FAVICON -->
-  <link rel="icon" href="/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="icon" type="image/png" href="assets/images/logo1.png">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="icon" href="/favicon.png" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Skill Hatch | Data Analytics Training</title>
+<meta name="description" content="Become a job-ready data analyst. Learn Power BI, SQL and Python with live projects, mentor-led training and career support.">
+<link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+<header class="nav"><div class="wrap nav-in">
+<a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Data Skill Hatch"></a>
+<nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<a class="btn" href="enroll.html">Enroll now</a>
+</div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><h1>Become a job-ready data analyst</h1>
+<p class="lead">Learn Power BI, SQL and Python through live projects and mentor-led training, starting from the basics.</p>
+<ul class="ticks"><li>Beginner to advanced</li><li>Hands-on projects with real datasets</li><li>Career and interview support</li></ul>
+<div class="actions"><a class="btn" href="enroll.html">Enroll now</a><a class="btn ghost" href="#programs">View programs</a></div></div>
+<div class="win" role="group" aria-label="Sample work from each program">
+<div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-panel="p-bi">Power BI</button><button role="tab" aria-selected="false" data-panel="p-sql">SQL</button><button role="tab" aria-selected="false" data-panel="p-py">Python</button></div>
+<div class="panel" id="p-bi"><div class="kpis"><div><b>₹48.2L</b><span>Revenue</span></div><div><b>12.4%</b><span>Growth</span></div><div><b>3,910</b><span>Orders</span></div></div>
+<div class="bars" aria-hidden="true"><i style="--h:42%"></i><i style="--h:58%"></i><i style="--h:50%"></i><i style="--h:92%"></i><i style="--h:70%"></i><i style="--h:80%"></i></div><div class="labels" aria-hidden="true"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div></div>
+<div class="panel" id="p-sql" hidden><pre><em>SELECT</em> region, <em>SUM</em>(revenue) <em>AS</em> total
+<em>FROM</em> sales
+<em>GROUP BY</em> region
+<em>ORDER BY</em> total <em>DESC</em>;</pre>
+<div class="result"><div><span>region</span><span>total</span></div><div><span>South</span><span>18,40,000</span></div><div><span>West</span><span>14,95,000</span></div><div><span>North</span><span>9,12,000</span></div></div></div>
+<div class="panel" id="p-py" hidden><pre><em>import</em> pandas <em>as</em> pd
 
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
-  <div class="logo">
-    <img src="assets/images/logo.png" alt="Dataskillhatch">
-  </div>
+df = pd.read_csv("sales.csv")
+df = df.dropna(subset=["revenue"])
+top = df.groupby("region")["revenue"].sum()
+top.sort_values().plot.barh()</pre></div>
+</div></div></section>
 
-  <nav class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#courses">Courses</a>
-    <a href="#about">About</a>
-    <a href="#contact" class="btn-contact">Contact</a>
-  </nav>
-</header>
+<section class="facts"><div class="wrap"><span><b>100+</b>students trained</span><span><b>10</b>live projects</span><span><b>8 weeks</b>program length</span></div></section>
 
+<section class="section" id="about"><div class="wrap split">
+<div class="head" style="margin:0"><h2>Training built around the job, not the certificate</h2><p>Work through the same datasets, business questions and dashboards that data teams handle every day.</p></div>
+<div class="feature-list">
+<div><h3>Industry-focused curriculum</h3><p>Designed from real industry requirements, with real datasets and business problems instead of theory alone.</p></div>
+<div><h3>Mentor-led learning</h3><p>Industry mentors guide you step by step, answer your doubts and share what the work is really like.</p></div>
+<div><h3>Certification you can show</h3><p>A Data Skill Hatch certificate backed by the projects you built, so you have something to talk about in interviews.</p></div>
+<div><h3>Career and interview support</h3><p>Resume guidance, mock interviews and a career roadmap.</p></div>
+<div><h3>Flexible batches</h3><p>Weekday and weekend batches, with recordings for revision.</p></div>
+</div></div></section>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="home">
-  <div class="hero-overlay"></div>
-  <div class="hero-content fade-in">
-    <h1>Become a Job-Ready Data Analyst</h1>
-    <p>Master Power BI, SQL & Python with industry-focused training.</p>
-	<p>Beginner to Advanced</p>
-	<p>Hands-on Projects</p>
-	<p>Career & Interview Support</p>
-    <div class="hero-buttons">
-      <a href="enroll.html" class="btn-primary">Enroll Now</a>
-      <a href="#courses" class="btn-secondary">View Curriculum</a>
-    </div>
-  </div>
-</section>
+<section class="section tint"><div class="wrap">
+<div class="head"><h2>Who this program is for</h2><p>You don’t need a coding background. We start from the basics.</p></div>
+<div class="who"><div><h3>Students and freshers</h3><p>Start your analytics career with confidence.</p></div><div><h3>Working professionals</h3><p>Move into high-growth analytics roles.</p></div><div><h3>Analytics beginners</h3><p>Build strong foundations in data skills.</p></div><div><h3>Career switchers</h3><p>Bring your domain experience into data.</p></div></div>
+</div></section>
 
-<!-- ================= COUNTERS ================= -->
-<section class="counter-section">
-  <div class="counter-container">
-    <div class="counter-box">
-      <div class="counter-number" data-count="100">0</div>
-      <div class="counter-text">Students Trained</div>
-    </div>
-    <div class="counter-box">
-      <div class="counter-number" data-count="10">0</div>
-      <div class="counter-text">Live Projects</div>
-    </div>
-    <div class="counter-box">
-      <div class="counter-number" data-count="8">0</div>
-      <div class="counter-text">Weeks Program</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHY US ================= -->
-<section class="section" id="about">
-  <h2>Why Choose Data Skill Hatch?</h2>
-  <div class="cards">
-    <div class="card fade-in">
-      <h3>Industry-Focused Training</h3>
-      <p>Our curriculum is designed based on real industry requirements, not just theory. You’ll work with real datasets, business problems, and dashboards used by data professionals.</p>
-    </div>
-    <div class="card fade-in">
-      <h3>Job-Ready Curriculum</h3>
-      <p>Our training is focused on making you interview-ready and job-ready, not just certified.</p>
-    </div>
-    <div class="card fade-in">
-      <h3>Mentor-Led Learning</h3>
-      <p>Learn from experienced industry mentors who guide you step-by-step, clear your doubts, and share real-world insights from their professional experience.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- ================= WHAT WE PROVIDE ================= -->
-<section class="section" id="about">
-  <h2>What we provide?</h2>
-  <div class="cards">
-	<div class="card fade-in">
-      <h3>Certification That Matters</h3>
-      <p>Receive a Data Skill Hatch Certification that validates your practical skills and projects, helping you stand out in interviews.</p>
-    </div>
-	
-	<div class="card fade-in">
-      <h3>Career & Interview Support</h3>
-      <p>Resume building guidance, Mock interviews and Career roadmap planning</p>
-    </div>
-	
-	<div class="card fade-in">
-      <h3>Flexible Learning Options</h3>
-      <p>Weekend & weekday batches and Recorded sessions for revision</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- ================= WHO CAN JOIN? ================= -->
-<section class="who-section">
-  <div class="container">
-    <h2 class="section-title">Who This Program Is For</h2>
-    <p class="section-subtitle">Perfect for beginners and career switchers</p>
-
-    <div class="who-grid">
-      <div class="who-card">
-        <div class="icon">🎓</div>
-        <h3>Students & Freshers</h3>
-        <p>Start your analytics career with confidence.</p>
-      </div>
-
-      <div class="who-card">
-        <div class="icon">💼</div>
-        <h3>Working Professionals</h3>
-        <p>Switch to high-growth analytics roles.</p>
-      </div>
-
-      <div class="who-card">
-        <div class="icon">📊</div>
-        <h3>Analytics Beginners</h3>
-        <p>Build strong foundational data skills.</p>
-      </div>
-
-      <div class="who-card">
-        <div class="icon">🚀</div>
-        <h3>No Coding Required</h3>
-        <p>We start from basics. 100% beginner friendly.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= COURSES ================= -->
-<section class="section alt-bg" id="courses">
-  <h2>Our Programs</h2>
-  <div class="cards">
-    <!-- Power BI -->
-    <div class="card fade-in program-card">
-      <h3>Power BI Data Analyst Mastery Program</h3>
-      <p>
-        Learn to design professional dashboards and reports using
-        real business datasets.
-      </p>
-      <ul style="text-align:left; margin-top:12px;">
-        <li>Data Cleaning & Transformation</li>
-		<li>Data Modeling & DAX Fundamentals</li>
-        <li>Designing Dashboards</li>
-        <li>Publishing & Power BI Service</li>
-      </ul>
-    </div>
-
-    <!-- SQL -->
-    <div class="card fade-in program-card">
-      <h3>SQL Data Analyst Mastery Program</h3>
-      <p>
-        Master SQL queries used by analysts in real organizations.
-      </p>
-      <ul style="text-align:left; margin-top:12px;">
-        <li>SQL Fundamentals</li>
-        <li>Joins & Subqueries</li>
-        <li>CTE & Window functions</li>
-        <li>Real-time data querying scenarios</li>
-      </ul>
-    </div>
-
-    <!-- Python -->
-    <div class="card fade-in program-card">
-      <h3>Python Data Analyst Mastery Program</h3>
-      <p>
-        Analyze, clean and visualize data using Python libraries.
-      </p>
-      <ul style="text-align:left; margin-top:12px;">
-        <li>Python basics for analytics</li>
-        <li>Dataframes with Pandas</li>
-        <li>Cleaning & transforming datasets</li>
-        <li>Data Visualisation</li>
-      </ul>
-    </div>
-
-    <!-- Full Program -->
-    <div class="card fade-in program-card">
-      <h3>Data Analytics Mastery Program (Power BI, SQL & Python)</h3>
-      <p>
-        Complete end-to-end analytics training designed for career growth.
-      </p>
-      <ul style="text-align:left; margin-top:12px;">
-        <li>Power BI + SQL + Python</li>
-        <li>End-to-end Analysis</li>
-        <li>Dashboard & Presentation</li>
-        <li>Resume-ready Project</li>
-      </ul> 
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section class="contact-section">
-  <h2>Contact Us</h2>
-
-  <div class="contact-card">
-    <p>
-      <span class="icon">📧</span>
-      <a href="mailto:gowtham.rathinam@dataskillhatch.com">
-        gowtham.rathinam@dataskillhatch.com
-      </a>
-    </p>
-  </div>
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  © 2025 Data Skill Hatch. All rights reserved.
-</footer>
-
-<!-- ================= WHATSAPP ================= -->
-<a class="whatsapp-float" href="https://wa.me/919698825069" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- ================= SCRIPTS ================= -->
-<script>
-/* Fade-in on scroll */
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('show');
-  });
-});
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-/* Counter animation */
-const counters = document.querySelectorAll('.counter-number');
-counters.forEach(counter => {
-  let start = 0;
-  const end = +counter.getAttribute('data-count');
-  const speed = 40;
-  const update = () => {
-    start += Math.ceil(end / speed);
-    if (start < end) {
-      counter.innerText = start;
-      setTimeout(update, 30);
-    } else {
-      counter.innerText = end;
-    }
-  };
-  update();
-});
-</script>
+<section class="section" id="programs"><div class="wrap"><div class="head"><h2>Our programs</h2><p>Pick one tool, or learn all three together.</p></div><div class="programs">
+<div class="prog"><span class="tag">Power BI</span><div><h3>Power BI Data Analyst Mastery Program</h3><p>Design dashboards and reports from real business datasets.</p></div><ul><li>Data cleaning and transformation</li><li>Data modeling and DAX basics</li><li>Dashboard design</li><li>Publishing with Power BI Service</li></ul></div>
+<div class="prog"><span class="tag">SQL</span><div><h3>SQL Data Analyst Mastery Program</h3><p>Write the queries analysts use every day in real organizations.</p></div><ul><li>SQL fundamentals</li><li>Joins and subqueries</li><li>CTEs and window functions</li><li>Real-time querying scenarios</li></ul></div>
+<div class="prog"><span class="tag">Python</span><div><h3>Python Data Analyst Mastery Program</h3><p>Clean, analyze and visualize data with Python libraries.</p></div><ul><li>Python basics for analytics</li><li>DataFrames with Pandas</li><li>Cleaning and transforming datasets</li><li>Data visualization</li></ul></div>
+<div class="prog full"><span class="tag">Full program</span><div><h3>Data Analytics Mastery Program</h3><p>Power BI, SQL and Python in one end-to-end course built for career growth.</p></div><ul><li>Power BI + SQL + Python</li><li>End-to-end analysis</li><li>Dashboard and presentation</li><li>Resume-ready project</li></ul></div>
+</div></div></section>
+<section class="cta"><div class="wrap"><h2>Start your next batch with us</h2><div class="actions"><a class="btn" href="enroll.html">Enroll now</a><a class="btn ghost" href="contact.html">Ask a question</a></div></div></section>
+<footer><div class="wrap"><span>© <span data-year>2026</span> Data Skill Hatch. All rights reserved.</span><a href="mailto:gowtham.rathinam@dataskillhatch.com" style="color:inherit">gowtham.rathinam@dataskillhatch.com</a></div></footer>
+<a class="whatsapp-float" href="https://wa.me/919698825069" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm4.9 13.6c-.2.6-1.2 1.1-1.7 1.1-.4.1-1 .1-1.6-.1-1.9-.6-3.7-1.9-4.9-3.6-.7-1-1.1-2-1.1-2.9 0-.9.5-1.4.7-1.6.2-.2.4-.3.6-.3h.4c.2 0 .3 0 .5.4l.7 1.6c.1.2.1.3 0 .5l-.3.4-.3.3c-.1.1-.2.3-.1.5.5.9 1.4 1.7 2.4 2.2.2.1.4.1.5-.1l.5-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.2.1.6-.1 1.1z"/></svg></a>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
